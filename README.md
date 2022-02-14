@@ -30,9 +30,9 @@ return $account_api->getAccessToken();
 
 - 微擎原装api已支持  
 
-- 微信小程序前端基础框架已支持  
+- 微信小程序前端基础框架已支持  (https://gitee.com/ripperTs/micro-engine-module-wxapp)  
 
-- 微信公众号、H5前端框架已支持  
+- 微信公众号、H5前端框架已支持  (https://gitee.com/ripperTs/micro-engine-vue)  
 
 
 
