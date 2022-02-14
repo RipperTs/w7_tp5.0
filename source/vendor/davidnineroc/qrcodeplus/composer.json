@@ -1,0 +1,32 @@
+{
+    "name": "davidnineroc/qrcodeplus",
+    "description": "可以生成四色， 九色， 十六色， 背景图二维码， 彩色二维码！",
+    "keywords": ["DavidNineRoc", "qrcode", "multicolour", "polychrome", "qrcodeplus", "彩色二维码"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DavidNineRoc",
+            "email": "1033404553@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.1",
+        "endroid/qr-code": "^3.0@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "DavidNineRoc\\Qrcode\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpmd/phpmd" : "@stable",
+        "phpunit/phpunit": "6.2"
+    }
+}

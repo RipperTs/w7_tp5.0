@@ -1,37 +1,27 @@
-# 微擎应用框架
+## 微擎ThinkPHP应用框架
+### 消息队列处理
+需要使用`/source/think`文件来处理消息队列,`exec()`函数执行监听指令时必须添加`2>&1 &`使其后台执行,
+或者使用单线程模式,否则将大大消耗服务器内存
 
-#### 介绍
-使用thinkphp5.0开发微擎应用框架
+#### 消息队列配置文件
+`extra/queue.php`
 
-#### 软件架构
-软件架构说明
+#### 消息队列处理类
+`source/application/common/message/DoJob.php`
 
+#### 发送及消费消息demo
+`source/application/common/message/sendDemo.php`
 
-#### 安装教程
+#### 监听消息队列
+1. 在此项目目录下执行命令 `sh ./start.sh`
+2. 然后 `Ctrl+c` 终止前台命令。
+3. `ps -ef|grep queue|grep -v grep`查看进程,  
+   找到 `think queue`进行即可
+4. 关闭小黑框即可, 如果服务器重启后需要再次执行以上操作  
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+**注意,必须使用 `Ctrl+c` 方式进行退出,否则不会后台运行**
 
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+```
+关于消息队列:
+    与原有的ThinkPHP的queue不同,注意查看使用demo
+```

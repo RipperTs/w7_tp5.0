@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.w7.cc" versionCode="">
+
+	<application setting='false'>
+		<name><![CDATA[tp5框架]]></name>
+
+		<identifie><![CDATA[tp5_web]]></identifie>
+
+		<version><![CDATA[1.0.0]]></version>
+
+		<ability><![CDATA[tp5框架]]></ability>
+
+		<type><![CDATA[services]]></type>
+
+		<description><![CDATA[tp5框架]]></description>
+
+		<author><![CDATA[caiyunduoduo]]></author>
+
+		<url><![CDATA[]]></url>
+
+	</application>
+
+
+	<platform>
+		<rule embed="false" />
+
+		<rule embed="false" />
+
+	<supports>
+
+			<item type="branch" />
+			<item type="wxapp" />
+			<item type="app" />
+	</supports>
+
+	</platform>
+
+
+	<bindings>
+
+		<menu>
+			<entry title="管理后台" do="store" state="" direct="" displayorder="0" multilevel="false" parent="" />
+		</menu>
+
+	</bindings>
+
+	<install><![CDATA[install.php]]></install>
+	<uninstall><![CDATA[uninstall.php]]></uninstall>
+	<upgrade><![CDATA[upgrade.php]]></upgrade>
+</manifest>

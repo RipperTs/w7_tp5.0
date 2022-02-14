@@ -1,0 +1,1 @@
+cd ./source && nohup php think queue:listen --queue JobQueue 2>&1 &

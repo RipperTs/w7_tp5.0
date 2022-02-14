@@ -1,0 +1,41 @@
+#!/usr/bin/env php
+<?php
+// +----------------------------------------------------------------------
+// | ThinkPHP [ W7 dedicated ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2021 http://wslmf.com All rights reserved.
+// +----------------------------------------------------------------------
+// | Licensed ( http://www.apache.org/licenses/LICENSE-2.0 )
+// +----------------------------------------------------------------------
+// | Author: wslmf <wangyifani@foxmail.com>
+// +----------------------------------------------------------------------
+
+// 获得微擎目录权限
+define('IN_IA', true);
+// 当前文件路径
+$str_path = str_replace('\\', '/', dirname(dirname(__FILE__)));
+// 定义模块名
+define('MODULE_NAME', getRightSubstr($str_path,'/addons/'));
+// 定义微擎ROOT路径
+define('IA_ROOT', getLeftSubstr($str_path,'/addons'));
+// 定义项目路径
+define('APP_PATH', __DIR__ . '/application/');
+// 定义运行目录
+define('WEB_PATH', getLeftSubstr(__DIR__,'/source'). '/web/');
+
+// 加载框架引导文件
+require __DIR__.'/thinkphp/console.php';
+
+// 取文本左边
+function getLeftSubstr($str, $rightStr)
+{
+    $right = strpos($str, $rightStr);
+    return substr($str, 0, $right);
+}
+
+// 取文本右边
+function getRightSubstr($str, $leftStr)
+{
+    $left = strpos($str, $leftStr);
+    return substr($str, $left + strlen($leftStr));
+}
