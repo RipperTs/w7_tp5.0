@@ -30,9 +30,9 @@ return $account_api->getAccessToken();
 
 - 微擎原装api已支持  
 
-- 微信小程序前端基础框架已支持  (https://gitee.com/ripperTs/micro-engine-module-wxapp)  
+- 微信小程序前端基础框架已支持  (https://github.com/RipperTs/micro-engine-module-wxapp)  
 
-- 微信公众号、H5前端框架已支持  (https://gitee.com/ripperTs/micro-engine-vue)  
+- 微信公众号、H5前端框架已支持  (https://github.com/RipperTs/micro-engine-vue)  
 
 
 
@@ -44,11 +44,11 @@ return $account_api->getAccessToken();
 
 同时，因程序不依赖微擎框架，创建应用时候请选择PC，避免审核失败。当然，如果是小程序端可以自行改写调整api，然后在微擎中再次上传一个纯前端的小程序代码。
 
-![img](https://api.axu9.com/Public/Uploads/2020-11-12/5face54152f8c.png)
+![5face54152f8c](./5face54152f8c.png)
 
 Tips：微擎应用有多版本设置，因此我们可以将`管理后台` `超级后台` 分开，比如说：基础版只有`管理后台`入口，高级版才有`超级后台` `管理后台` 两个入口。
 
-![img](https://api.axu9.com/Public/Uploads/2020-11-12/5face5bb8f562.png)
+![5face5bb8f562](./5face5bb8f562.png)
 
 导出模块基础包就可以进行开发了！
 
